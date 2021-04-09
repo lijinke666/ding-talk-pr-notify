@@ -9,9 +9,9 @@ async function run() {
     const { owner, repo } = context.repo;
     const pr = context.payload.pull_request
     const dingTalkToken = core.getInput('ding_talk_token');
-    const extraContent = core.getInput('extraContent') || '';
-    const repoUrl = core.getInput('repoUrl');
-    const atAll = core.getInput('atAll') || false;
+    const extraContent = core.getInput('extra_content') || '';
+    const repoUrl = core.getInput('repo_url');
+    const atAll = core.getInput('at_all') || false;
 
     if (!dingTalkToken) {
       core.setFailed('Please set DingTalk access token!');
