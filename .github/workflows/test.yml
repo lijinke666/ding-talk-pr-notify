@@ -1,6 +1,6 @@
 name: CI
 
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   setup:
@@ -9,11 +9,9 @@ jobs:
       - name: checkout
         uses: actions/checkout@main
 
-      - name: install
-        run: yarn install
-      
-      - name: format-check
-        run: yarn format-check
-
-      - name: package
-        run: yarn package
+      - name: Ding Talk PR Notify
+        uses: lijinke666/ding-talk-pr-notify@main
+        with:
+          ding_talk_token: ${{ secrets.DING_TALK_ACCESS_TOKEN}}
+          repo_url: https://github.com/antvis/S2/pull
+          at_all: true
