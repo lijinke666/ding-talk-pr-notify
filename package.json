@@ -1,8 +1,8 @@
 {
-  "name": "action-js-template",
-  "version": "0.0.2",
+  "name": "ding-talk-pr-notify",
+  "version": "0.0.3",
   "private": true,
-  "description": "A javascript template for rapid development of GitHub actions.",
+  "description": "Ding talk pull request notify tool.",
   "main": "src/main.js",
   "scripts": {
     "package": "ncc build",
@@ -11,10 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/actions-cool/action-js-template",
+    "url": "https://github.com/lijinke666/ding-talk-pr-notify",
     "branch": "main"
   },
-  "author": "xrkffgg",
+  "author": "Jinke.Li",
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.6",

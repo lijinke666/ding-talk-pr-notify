@@ -4,10 +4,7 @@
   </a>
 </p>
 
-<h1 align="center">Action JavaScript Template</h1>
-<div align="center">
-A simple javascript template for rapid development of GitHub actions.
-</div>
+<h1 align="center">Ding Talk PR Notify</h1>
 
 ![](https://img.shields.io/github/workflow/status/actions-cool/action-js-template/CI?style=flat-square)
 [![](https://img.shields.io/badge/marketplace-action--js--template-blueviolet?style=flat-square)](https://github.com/marketplace/actions/action-js-template)
@@ -15,7 +12,14 @@ A simple javascript template for rapid development of GitHub actions.
 
 ## 🚀 How to use?
 
-![](https://github.com/actions-cool/resources/blob/main/image/template-js.png?raw=true)
+```bash
+uses: lijinke666/ding-talk-pr-notify@main
+with:
+  ding_talk_token: ${{ secrets.DING_TALK_ACCESS_TOKEN}}  # 钉钉 webhook token (必填)
+  repo_url: https://github.com/antvis/S2/pull  # 通知里面的pr地址, 自动带上pr号 (可选)
+  at_all: true  # 是否@所有人 (可选)
+  extra_content: '' # 额外的文本内容 (可选)
+```
 
 ## 📒 Catalog Introduction
 

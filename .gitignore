@@ -40,6 +40,7 @@ package-lock.json
 *.sln
 *.sw?
 ~$*.*
+.history
 
 # umi
 .umi
