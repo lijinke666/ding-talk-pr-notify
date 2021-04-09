@@ -1,5 +1,4 @@
 const core = require('@actions/core');
-const { Octokit } = require('@octokit/rest');
 const github = require('@actions/github');
 const DingRobot = require('ding-robot');
 
