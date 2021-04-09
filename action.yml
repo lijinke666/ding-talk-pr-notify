@@ -13,6 +13,19 @@ inputs:
     description: Secret GitHub API token to use for making API requests.
     default: ${{ github.token }}
     required: true
+    
+  ding_talk_token:
+    description: 'dingtalk web hook token'
+    required: true
+
+  repoUrl:
+    description: 'github pull request url'
+
+  content:
+    description: 'message content'
+
+  atAll:
+    description: 'at all users'
 
 #outputs:
 #  result:
