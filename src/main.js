@@ -21,7 +21,7 @@ async function run() {
       }
     });
     const prLink = repoUrl ? `${repoUrl}/${pr.number}` : pr.html_url;
-    const content = `📢 ${pr.user.login} 发起PR: (${pr.title}), 请大家帮忙review 👀 \n🔗 链接: ${prLink}. \n${extraContent}`;
+    const content = `📢 ${pr.user.login} 发起PR: (${pr.title}), 请大家帮忙review 👀 \n🔗 链接: ${prLink} \n${extraContent}`;
     robot.atAll(atAll).text(content);
   } catch (error) {
     core.setFailed(error.message);
