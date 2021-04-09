@@ -1,7 +1,7 @@
 # https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions
-name: 'Action JS Template'
-description: 'A simple javascript template for rapid development of GitHub actions.'
-author: 'xrkffgg'
+name: 'Ding Talk PR Notify'
+description: 'A ding talk pr notify of GitHub actions.'
+author: 'lijinke666'
 
 branding:
   # https://actions-cool.github.io/github-action-branding/
