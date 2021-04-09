@@ -18,13 +18,13 @@ inputs:
     description: 'dingtalk web hook token'
     required: true
 
-  repoUrl:
+  repo_url:
     description: 'github pull request url'
 
   content:
     description: 'message content'
 
-  atAll:
+  at_all:
     description: 'at all users'
 
 #outputs:
