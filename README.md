@@ -17,6 +17,11 @@ name: 🔊 PR Ding Talk Notify
 
 on: pull_request
 
+# 如果不想频繁的收到提示, 可以只在PR打开的时候提示
+# on:
+#   pull_request:
+#     types: [opened]
+
 jobs:
   preview:
     runs-on: ubuntu-latest
